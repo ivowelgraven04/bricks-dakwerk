@@ -15,34 +15,46 @@ export default function AppleIcon() {
           alignItems: "center",
           justifyContent: "center",
           background:
-            "radial-gradient(circle at 30% 30%, rgba(209,122,71,0.35) 0%, #0A0A0A 70%)",
-          borderRadius: "40px",
+            "radial-gradient(circle at 30% 25%, rgba(209,122,71,0.45) 0%, rgba(10,10,10,1) 70%), linear-gradient(180deg, #0A0A0A 0%, #111111 100%)",
+          borderRadius: 40,
         }}
       >
-        <svg
-          width="108"
-          height="108"
-          viewBox="0 0 44 44"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
+        <div
+          style={{
+            width: 124,
+            height: 124,
+            borderRadius: 999,
+            border: "4px solid #ffffff",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
         >
-          <path
-            d="M8 22 L22 10 L36 22"
-            stroke="#D17A47"
-            strokeWidth="3.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-          <rect
-            x="13"
-            y="22"
-            width="18"
-            height="12"
-            stroke="#D17A47"
-            strokeWidth="3.5"
+          <svg
+            width="72"
+            height="72"
+            viewBox="0 0 44 44"
             fill="none"
-          />
-        </svg>
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8 22 L22 10 L36 22"
+              stroke="#D17A47"
+              strokeWidth="3.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+            <rect
+              x="13"
+              y="22"
+              width="18"
+              height="12"
+              stroke="#D17A47"
+              strokeWidth="3.5"
+              fill="none"
+            />
+          </svg>
+        </div>
       </div>
     ),
     { ...size }

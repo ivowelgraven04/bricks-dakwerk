@@ -14,21 +14,20 @@ export default function Icon() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          background: "#0A0A0A",
-          borderRadius: "50%",
-          border: "3px solid #ffffff",
+          background: "#D17A47",
+          borderRadius: 14,
         }}
       >
         <svg
-          width="36"
-          height="36"
+          width="40"
+          height="40"
           viewBox="0 0 44 44"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
             d="M8 22 L22 10 L36 22"
-            stroke="#D17A47"
+            stroke="#ffffff"
             strokeWidth="4"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -38,7 +37,7 @@ export default function Icon() {
             y="22"
             width="18"
             height="12"
-            stroke="#D17A47"
+            stroke="#ffffff"
             strokeWidth="4"
             fill="none"
           />
