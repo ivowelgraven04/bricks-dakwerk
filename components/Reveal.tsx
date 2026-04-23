@@ -38,10 +38,10 @@ export function Reveal({
   }, [delay]);
 
   const base = stagger ? "reveal-stagger" : "reveal";
-  // @ts-expect-error — dynamic tag
+  const Component = Tag as React.ElementType;
   return (
-    <Tag ref={ref} className={`${base} ${className}`}>
+    <Component ref={ref} className={`${base} ${className}`}>
       {children}
-    </Tag>
+    </Component>
   );
 }
