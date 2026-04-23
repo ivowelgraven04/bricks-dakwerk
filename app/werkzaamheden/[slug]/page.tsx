@@ -18,9 +18,22 @@ type Params = { params: { slug: string } };
 export function generateMetadata({ params }: Params): Metadata {
   const service = getService(params.slug);
   if (!service) return { title: "Werkzaamheden" };
+  const path = `/werkzaamheden/${service.slug}`;
   return {
     title: service.title,
     description: service.short,
+    alternates: { canonical: path },
+    openGraph: {
+      title: `${service.title} · Bricks Dakwerken`,
+      description: service.short,
+      url: path,
+      type: "article",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${service.title} · Bricks Dakwerken`,
+      description: service.short,
+    },
   };
 }
 

@@ -1,3 +1,9 @@
+export const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  (process.env.VERCEL_URL
+    ? `https://${process.env.VERCEL_URL}`
+    : "https://www.bricksdakwerk.nl");
+
 export const site = {
   name: "Bricks Dakwerken",
   tagline: "Vakmanschap in dak- en kluswerkzaamheden",
@@ -10,6 +16,7 @@ export const site = {
   baseLocation: "Zuid-Limburg",
   owner: "William van Dijk",
   yearSince: null as number | null,
+  url: siteUrl,
 };
 
 export const nav = [
